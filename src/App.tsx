@@ -1,5 +1,8 @@
 import './App.css'
-import Layout from "./components/static-assets/Layout.tsx";
+import Layout from "./static-assets/Layout.tsx";
+import StopWatch from "./components/StopWatch.tsx";
+// import Display from "./components/Display.tsx";
+// import Laps from "./components/Laps.tsx";
 // import StopWatch from "./components/StopWatch.tsx";
 // import Header from "./components/Header.tsx";
 // import Footer from "./components/static-assets/Footer.tsx";
@@ -17,7 +20,7 @@ function App() {
       {/*<Footer />*/}
       {/*<StopWatch/>*/}
         <Layout>
-
+            <StopWatch/>
         </Layout>
 
     </>
