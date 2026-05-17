@@ -4,7 +4,7 @@ const Footer =() => {
     return(
         <>
             <footer className="bg-amber-600 text-black font-medium ">
-                <div className="container mx-auto py-8 text-center">
+                <div className="container mx-auto py-6 text-center">
                     &copy; {currentYear} Coding Factory 9. All Rights reserved.
                 </div>
             </footer>
