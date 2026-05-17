@@ -87,36 +87,37 @@ const StopWatch = () => {
         <>
             <Display time={formatTime(time)}/>
 
-            <div className="flex-1 mt-6" >
+            <div className="flex mt-6 gap-3">
                 <Buttons
-                label="Reset"
-                onClick={handleReset}
-                disabled={isRunning}
-                addClasses="w-full flex  py-3 rounded-full bg-gray-500 text-white hover:bg-gray-400 hover:text-black"
+                    label="Reset"
+                    onClick={handleReset}
+                    disabled={isRunning}
+                    addClasses="flex px-4 py-3 rounded-full bg-gray-500 text-white hover:bg-gray-400 hover:text-black"
                 />
 
                 {isRunning && (
                     <Buttons
-                    label="Lap"
-                    onClick={handleLap}
-                    addClasses="flex  py-3 rounded-full bg-blue-500 text-white"/>
-
+                        label="Lap"
+                        onClick={handleLap}
+                        addClasses="flex px-4 py-3 rounded-full bg-blue-500 text-white"
+                    />
                 )}
 
                 {isRunning ? (
                     <Buttons
-                    label="Stop"
-                    onClick={handleStop}
-                    addClasses="flex py-3 rounded-full bg-red-500 text-white font-semibold
-                    hover:bg-red-400 transition"/>
+                        label="Stop"
+                        onClick={handleStop}
+                        addClasses="flex px-4 py-3 rounded-full bg-red-500 text-white font-semibold hover:bg-red-400 transition"
+                    />
                 ) : (
                     <Buttons
-                    label="Start"
-                    onClick={handleStart}
-                    addClasses="flex py-3 rounded-full bg-green-500 text-black font-semibold
-                    hover:bg-green-400 transition"/>
+                        label="Start"
+                        onClick={handleStart}
+                        addClasses="flex px-4 py-3 rounded-full bg-green-500 text-black font-semibold hover:bg-green-400 transition"
+                    />
                 )}
             </div>
+
             <Laps laps={laps} />
 
         </>
