@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+@theme {
+    --color-sw-dark-grey: #1b1d26
+}
